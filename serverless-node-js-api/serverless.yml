@@ -10,3 +10,6 @@ functions:
     handler: index.handler
     events:
       - httpApi: '*'
+
+plugins:
+  - serverless-plugin-typescript
