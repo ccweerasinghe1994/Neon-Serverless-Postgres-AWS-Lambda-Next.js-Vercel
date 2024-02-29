@@ -2,3 +2,4 @@ node_modules
 .serverless
 .env.dev
 .env
+serverless-node-js-api/.env.dev
