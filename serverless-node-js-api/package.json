@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "drizzle-kit": "^0.20.14",
+    "serverless-dotenv-plugin": "^6.0.0",
     "serverless-offline": "^13.3.3"
   }
 }
