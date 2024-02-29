@@ -63,8 +63,54 @@ we will also use drizzle-kit
 npm i -D drizzle-kit
 ```
 
-let's add typescript to our project
+<!-- let's add typescript to our project
 
 ```bash
-npm i -D @types/aws-lambda typescript serverless-plugin-typescript @types/node
+npm i -D @types/aws-lambda typescript serverless-plugin-typescript @types/node @types/express
+``` -->
+
+if we are running the application in a server full environment.
+
+```bash
+node index.ts
+```
+
+but we are not so let's use the following command
+
+```bash
+serverless plugin install -n serverless-offline
+```
+
+this will add the serverless-offline plugin to devDependencies in package.json file as well as will add it to plugins in serverless.yml.
+
+The command serverless plugin install -n serverless-offline is used to install a specific plugin for the Serverless framework. The -n option is used to specify the name of the plugin, which in this case is serverless-offline.
+
+The serverless-offline plugin emulates AWS λ and API Gateway on your local machine to speed up your development cycles. To do so, it starts an HTTP server that handles the request's lifecycle like APIG does and invokes your handlers.
+
+![alt text](image-4.png)
+
+this will add
+
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+current serverless.yml file
+
+```yaml
+service: serverless-node-js-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-offline
+
 ```
