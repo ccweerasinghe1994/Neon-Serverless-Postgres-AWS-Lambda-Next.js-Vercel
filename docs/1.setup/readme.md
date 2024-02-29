@@ -114,3 +114,29 @@ plugins:
   - serverless-offline
 
 ```
+
+let's add a script to our package.json file
+
+```json
+"scripts": {
+    "start": "sls offline --stage dev"
+  },
+```
+
+and move the application code to a folder called src
+
+```bash
+mkdir src
+mv index.js src/index.js
+```
+
+amd change the handler in serverless.yml
+
+```yaml
+functions:
+  api:
+    handler: src/index.handler
+    events:
+      - httpApi: '*'
+```
+
