@@ -1,7 +1,7 @@
-import express from "express";
-import serverless from "serverless-http";
-
+const serverless = require("serverless-http");
+const express = require("express");
 const app = express();
+
 app.get("/", (req, res, next) => {
   return res.status(200).json({
     message: "Hello from root!",
@@ -20,4 +20,4 @@ app.use((req, res, next) => {
   });
 });
 
-export const handler = serverless(app);
+module.exports.handler = serverless(app);
