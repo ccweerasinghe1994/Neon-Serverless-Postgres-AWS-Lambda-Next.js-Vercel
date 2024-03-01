@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "sls offline --stage dev"
+    "dev": "sls offline --stage dev",
+    "deploy": "sls deploy --stage prod --region us-east-1 --verbose",
+    "remove": "sls remove --stage prod --region us-east-2 --verbose"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.0",
