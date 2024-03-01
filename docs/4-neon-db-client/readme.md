@@ -1,3 +1,9 @@
+![alt text](image.png)
+
+let's exclude the aws keys from the env file
+
+
+```yml
 service: serverless-node-js-api
 frameworkVersion: '3'
 useDotenv: true
@@ -24,3 +30,6 @@ custom:
 plugins:
   - serverless-offline
   - serverless-dotenv-plugin
+```
+
+now these values won't be added to the state file.
