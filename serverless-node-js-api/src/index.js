@@ -2,6 +2,7 @@ const serverless = require("serverless-http");
 const express = require("express");
 const { neon, neonConfig } = require('@neondatabase/serverless');
 
+const DATABASE_URL_SSM_PARAM = process.env.DATABASE_URL_SSM_PARAM
 
 const app = express();
 
