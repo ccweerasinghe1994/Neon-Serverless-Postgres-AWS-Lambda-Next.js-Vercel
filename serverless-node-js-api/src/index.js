@@ -1,12 +1,25 @@
 const serverless = require("serverless-http");
 const express = require("express");
+const { neon, neonConfig } = require('@neondatabase/serverless');
+
+
 const app = express();
 
-app.get("/", (req, res, next) => {
+async function dbClient(params) {
+  // Enable connection caching
+  // This will cache the connection for the duration of the lambda execution
+  // non-pooling
+  neonConfig.fetchConnectionCache = true;
+  return neon(process.env.DATABASE_URL);
+}
+
+app.get("/", async (req, res, next) => {
+  const sql = await dbClient();
+
+  const [result] = await sql`select now()`;
   return res.status(200).json({
     message: "Hello from root!",
-    DATABASE_URL: process.env.DATABASE_URL || "Not set",
-    DEBUG: process.env.DEBUG === `1`,
+    result: result.now,
   });
 });
 
