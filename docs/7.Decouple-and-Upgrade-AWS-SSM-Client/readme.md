@@ -85,3 +85,10 @@ app.use((req, res, next) => {
 
 module.exports.handler = serverless(app);
 ```
+
+let's add a new script for info
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+![alt text](image-4.png)

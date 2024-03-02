@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "sls offline --stage dev",
     "deploy": "sls deploy --stage prod --region us-east-1 --verbose",
+    "info": "sls info --stage prod --region us-east-1 --verbose",
     "remove": "sls remove --stage prod --region us-east-2 --verbose"
   },
   "dependencies": {
