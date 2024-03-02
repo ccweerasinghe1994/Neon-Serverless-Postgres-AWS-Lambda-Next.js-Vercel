@@ -6,7 +6,20 @@ provider:
   name: aws
   runtime: nodejs20.x
   environment:
-    DATABASE_URL: ${env:DATABASE_URL,"fall back value"}
+    DATABASE_URL_SSM_PARAM: ${env:DATABASE_URL_SSM_PARAM,"fall back value"}
+  iam:
+    role:
+      name: serverless-my-ssm-lambda-role
+      statements:
+        - Effect: "Allow"
+          Resource: "*"
+          Action:
+            - "ssm:GetParameter"
+            - "ssm:GetParameters"
+            - "ssm:GetParametersByPath"
+            - "ssm:GetParameterHistory"
+            - "ssm:DescribeParameters"
+
 
 functions:
   api:
@@ -20,6 +33,8 @@ custom:
       - AWS_ACCESS_KEY_ID
       - AWS_SECRET_ACCESS_KEY
       - AWS_SESSION_TOKEN
+      - DATABASE_URL
+      - AWS_REGION
 
 plugins:
   - serverless-offline
