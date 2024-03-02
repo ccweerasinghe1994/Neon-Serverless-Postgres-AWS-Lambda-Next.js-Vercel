@@ -2,10 +2,7 @@
 const { SSMClient, GetParameterCommand } = require("@aws-sdk/client-ssm");
 
 const DATABASE_URL_SSM_PARAM = process.env.DATABASE_URL_SSM_PARAM;
-
 const AWS_REGION = process.env.AWS_REGION;
-
-
 
 async function getDatabaseUrl() {
     const client = new SSMClient({ region: AWS_REGION });
