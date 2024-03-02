@@ -162,3 +162,7 @@ npm run deploy
     ]
 }
 ```
+
+let's see the how many milliseconds it takes to get the data from neondatabase
+
+![alt text](image-3.png)
