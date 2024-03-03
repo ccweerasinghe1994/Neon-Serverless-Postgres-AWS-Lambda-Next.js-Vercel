@@ -2,6 +2,7 @@ const serverless = require("serverless-http");
 const express = require("express");
 const {getDbClient} = require("./db/clients");
 const {getLeads, newLead, getLeadById} = require("./db/crud");
+const {emailValidator} = require("./db/validator");
 
 
 const app = express();
@@ -39,10 +40,19 @@ app.get("/leads/:id", async (req, res, next) => {
 });
 app.post("/leads", async (req, res, next) => {
     const {email} = req.body;
-    const savedLead = await newLead(email);
+    const {data, hasError, message} = emailValidator({email});
+    if (hasError) {
+        return res.status(400).json({
+            error: message,
+            data: null,
+            hasError
+        });
+    }
+    const savedLead = await newLead(data.email);
     return res.status(200).json({
-        message: "Hello from path!",
         data: savedLead,
+        hasError,
+        message
     });
 });
 app.use((req, res, next) => {
