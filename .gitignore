@@ -2,6 +2,7 @@ node_modules
 .serverless
 .env.dev
 .env
+.env.prod
 serverless-node-js-api/.env.dev
 serverless-node-js-api/.env.prod
 serverless-node-js-api/reference/policy.json
