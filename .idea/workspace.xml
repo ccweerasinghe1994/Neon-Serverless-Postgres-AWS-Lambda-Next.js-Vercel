@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f743a7e8-960d-4971-a2ba-267776cf1af5" name="Changes" comment="automating parameter store update">
-      <change afterPath="$PROJECT_DIR$/serverless-node-js-api/.github/workflows/dev-stage.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serverless-node-js-api/.github/workflows/prod-stage.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f743a7e8-960d-4971-a2ba-267776cf1af5" name="Changes" comment="adding workflow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +73,7 @@
       <recent name="C:\Users\USER\Documents\GitHub\Neon-Serverless-Postgres,AWS-Lambda,Next.js,Vercel\aws-node-express-api-project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\GitHub\Neon-Serverless-Postgres,AWS-Lambda,Next.js,Vercel" />
       <recent name="C:\Users\USER\Documents\GitHub\Neon-Serverless-Postgres,AWS-Lambda,Next.js,Vercel\docs" />
     </key>
   </component>
@@ -146,7 +143,7 @@
       <workItem from="1709430830263" duration="1448000" />
       <workItem from="1709432865709" duration="3000" />
       <workItem from="1709432879963" duration="2000" />
-      <workItem from="1709432892700" duration="8665000" />
+      <workItem from="1709432892700" duration="8981000" />
     </task>
     <task id="LOCAL-00001" summary="adding crud methods">
       <option name="closed" value="true" />
@@ -196,7 +193,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709531622213</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding workflow">
+      <option name="closed" value="true" />
+      <created>1709555685530</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709555685530</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding workflow">
+      <option name="closed" value="true" />
+      <created>1709555776600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709555776600</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +220,7 @@
     <MESSAGE value="adding crud methods" />
     <MESSAGE value="adding zod" />
     <MESSAGE value="automating parameter store update" />
-    <option name="LAST_COMMIT_MESSAGE" value="automating parameter store update" />
+    <MESSAGE value="adding workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding workflow" />
   </component>
 </project>
