@@ -15,7 +15,6 @@ provider:
           Resource: "*"
           Action:
             - "ssm:GetParameter"
-            - "ssm:GetParameters"
             - "ssm:GetParametersByPath"
             - "ssm:GetParameterHistory"
             - "ssm:DescribeParameters"
