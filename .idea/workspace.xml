@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f743a7e8-960d-4971-a2ba-267776cf1af5" name="Changes" comment="adding workflow" />
+    <list default="true" id="f743a7e8-960d-4971-a2ba-267776cf1af5" name="Changes" comment="adding workflow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless-node-js-api/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless-node-js-api/serverless.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "14-Automated-Deployments-via-Github-Actions",
+    "git-widget-placeholder": "15-Automated-Deployments-via-Github-Actions",
     "ignore.virus.scanning.warn.message": "true",
     "js.last.introduce.type": "CONST",
     "last_opened_file_path": "C:/Users/USER/Documents/GitHub/Neon-Serverless-Postgres,AWS-Lambda,Next.js,Vercel/serverless-node-js-api/src/cli",
@@ -144,6 +147,7 @@
       <workItem from="1709432865709" duration="3000" />
       <workItem from="1709432879963" duration="2000" />
       <workItem from="1709432892700" duration="8981000" />
+      <workItem from="1709650319789" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="adding crud methods">
       <option name="closed" value="true" />
@@ -209,7 +213,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709555776600</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding workflow">
+      <option name="closed" value="true" />
+      <created>1709556324206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709556324206</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding workflow">
+      <option name="closed" value="true" />
+      <created>1709651194339</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709651194339</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

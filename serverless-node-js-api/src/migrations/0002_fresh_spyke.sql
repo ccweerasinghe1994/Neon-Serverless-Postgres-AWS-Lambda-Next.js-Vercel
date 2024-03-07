@@ -1,1 +1,0 @@
-ALTER TABLE "leads" ADD COLUMN "description" text DEFAULT 'this is a place holder description';

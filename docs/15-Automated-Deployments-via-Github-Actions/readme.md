@@ -1,3 +1,6 @@
+let's create the github actions workflow to run the prod deployment.
+
+```yaml
 name: Deploy Production App
 on:
   pull_request:
@@ -24,3 +27,4 @@ jobs:
         run: npm install
       - name: Deploy to AWS
         run: npm run deploy
+```
